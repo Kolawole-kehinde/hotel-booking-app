@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Document</title>
 </head>
-<body class="font-inter">
+<body class="font-roboto">
   <header class="bg-primary">
       <nav class="wrapper flex justify-between items-center py-4 text-white">
         <div>
@@ -33,13 +33,43 @@
           </div>
         </div>
       </nav>
-      <nav class="wrapper py-4 flex space-x-4">
-        <div>
-          <button class="border border-white text-white py-2 px-4 rounded-full hover:border-gray-800">
-            <i class="fa-thin fa-chair"></i>
-            Stay</button>
-        </div>
-        <div>
+      <nav class="wrapper py-4 flex space-x-4 text-white ">
+        <menu class="flex items-center space-x-10">
+          <li>
+            <a href="/">
+              <button class="border border-white text-white py-2 px-4 rounded-full hover:border-gray-800">
+                <i class="fa-thin fa-chair"></i>
+                Stay</button>
+            </a>
+          </li>
+
+          <li>
+              <a href="/">
+                Flights
+              </a>
+          </li>
+          <li>
+            <a href="/">
+              Car Rentals
+            </a>
+        </li>
+
+        <li>
+          <a href="/">
+           Experiences
+          </a>
+      </li>
+
+      <li>
+        <a href="/">
+          Airport Taxis
+        </a>
+    </li>
+      
+        
+          
+        
+        </menu>
       </nav>
   </header>
   <main>
@@ -75,7 +105,7 @@
           <input
             type="text"
             placeholder="Lagos"
-            class="w-full pl-10 pr-4 py-3 focus:outline-none border border-gray-300"
+            class="w-full pl-10 pr-4 py-3 focus:outline-none border border-gray-300 rounded-sm"
           />
           <i class="fa fa-times text-gray-500 cursor-pointer absolute right-3"></i>
         </div>
@@ -86,7 +116,7 @@
           <input
             type="text"
             placeholder="Tue, Dec 3 — Fri, Dec 6"
-            class="w-full pl-10 pr-4 py-3 focus:outline-none border border-gray-300 rounded-lg lg:rounded-none"
+            class="w-full pl-10 pr-4 py-3 focus:outline-none border border-gray-300 rounded-sm"
           />
         </div>
     
@@ -96,13 +126,13 @@
           <input
             type="text"
             placeholder="2 adults · 0 children · 1 room"
-            class="w-full pl-10 pr-4 py-3 focus:outline-none border border-gray-300 rounded-lg lg:rounded-none"
+            class="w-full pl-10 pr-4 py-3 focus:outline-none border border-gray-300 rounded-sm"
           />
         </div>
     
         <!-- Search Button -->
         <div class="lg:ml-2 flex justify-center mt-2 lg:mt-0">
-          <button class="bg-blue-600 text-white font-medium py-3 px-8 rounded-lg hover:bg-blue-700">
+          <button class="bg-blue-600 text-white font-medium py-3 px-8 rounded-sm hover:bg-blue-700">
             Search
           </button>
         </div>
@@ -120,24 +150,24 @@
         </label>
       </div>
 
-      <h4 class="mt-10">Continue your search</h4>
+      <h4 class="mt-10 text-2xl leading-[32px] font-bold font-rob">Continue your search</h4>
 
       <div class="flex mt-4">
         <div class="p-[8px] shadow-2xl w-full max-w-[355px] rounded-lg flex space-x-4">
           <img src="./public/asset/684500.jpg" alt="">
 
-          <div class="flex flex-col">
-            <strong>Lagos</strong>
+          <div class="flex flex-col space-y-2">
+            <strong class="text-sm leading-[20px] font-bold">Lagos</strong>
             <div class="flex space-x-2">
             <i class="fa fa-calendar text-gray-500"></i>
-          <input
+          <input class="text-xs text-dark-100 leading-[18px]"
             type="text"
             placeholder="Tue, Dec 3 — Fri, Dec 6"
             />
           </div>
               <div class="flex space-x-2">
             <i class="fa fa-user"></i>
-            <p> 2 ADULTS</p>
+            <p class="text-xs text-dark-100 leading-[18px]">2 adults</p>
           </div>
         
         
@@ -149,10 +179,633 @@
         </div>
       
       </div>
+
+
     </div>
-     
-       
   </section>
+
+    <!-- OFFER SECTION -->
+    <section class="wrapper py-10">
+      <div>
+        <h4 class="text-2xl leading-[32px] font-bold">Offers</h4>
+        <p class="text-base leading-[24px] py-2 text-dark-100">
+          Promotions, deals, and special offers for you
+        </p>
+        <div class="flex gap-6 items-start justify-between">
+          <!-- card 1 -->
+          <div class="flex flex-1 justify-between items-center p-4 border border-dark-200 rounded-lg">
+            <div class="space-y-2 w-full max-w-[366.22px]">
+              <h1 class="text-xl font-bold leading-[28px]">Go for a good time, not a long time</h1>
+              <p class="text-sm leading-[20px]">
+                Finish your year with a mini break. Save 15% or more when you book and stay by January 7, 2025.
+              </p>
+              <button class="btn bg-secondary text-white px-4 py-2 rounded-md">Find Late Escape Deal</button>
+            </div>
+            <div>
+              <img src="./public/asset/offer-img.jpeg" alt="offer" class="w-[124px] h-[124px] object-cover rounded-md">
+            </div>
+          </div>
+    
+          <!-- card 2 -->
+          <div class="flex flex-1 justify-between items-center p-4 border border-dark-200 rounded-lg">
+            <div class="space-y-2 w-full max-w-[366.22px]">
+              <h1 class="text-xl font-bold leading-[28px]">Up to 20% off attractions</h1>
+              <p class="text-sm leading-[20px]">
+                Make exploring easy with discounts on top experiences
+              </p>
+              <button class="btn bg-secondary text-white px-4 py-2 rounded-md">Explore Deal</button>
+            </div>
+            <div>
+              <img src="./public/asset/offer-img.jpeg" alt="offer" class="w-[124px] h-[124px] object-cover rounded-md">
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-2 mt-5">
+          <!-- Blue Circle -->
+          <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+          <!-- Gray Circle -->
+          <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Trending destinations section -->
+    <section class="wrapper py-10 flex gap-4 flex-col">
+      <h4 class="text-2xl leading-[32px] font-bold">Trending destinations</h4>
+      <p class="text-base leading-[24px] py-2 text-dark-100">
+        Travelers searching for Nigeria also booked these
+      </p>
+    
+      <div class="flex gap-4 w-full">
+        <!-- Card 1 -->
+        <div class="bg-lagos h-[270.11px] bg-cover bg-center bg-no-repeat rounded-2xl flex-col p-6 w-full">
+          <h1 class="text-3xl font-bold text-white flex items-center gap-2">
+            Lagos
+            <img
+              src="./public/asset/Nigeria-flag.png"
+              alt="Nigeria flag"
+              class="w-[21px] h-[21px] object-cover"
+            />
+          </h1>
+          <p class="text-base leading-[24px] py-2 text-white">Average price NGN 15,221.87</p>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="bg-ikeja h-[270.11px] bg-cover bg-center bg-no-repeat rounded-2xl flex-col p-6 w-full">
+          <h1 class="text-3xl font-bold text-white flex items-center gap-2">
+            Lagos
+            <img
+              src="./public/asset/Nigeria-flag.png"
+              alt="Nigeria flag"
+              class="w-[21px] h-[21px] object-cover"
+            />
+          </h1>
+          <p class="text-base leading-[24px] py-2 text-white">Average price NGN 15,221.87</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+           <!-- Card 1 -->
+        <div class="bg-lekki h-[270.11px] bg-cover bg-center bg-no-repeat rounded-2xl flex-col p-6 w-full">
+          <h1 class="text-3xl font-bold text-white flex items-center gap-2">
+            Lekki
+            <img
+              src="./public/asset/Nigeria-flag.png"
+              alt="Nigeria flag"
+              class="w-[21px] h-[21px] object-cover"
+            />
+          </h1>
+          <p class="text-base leading-[24px] py-2 text-white">Average price NGN 15,221.87</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-abuja h-[270.11px] bg-cover bg-center bg-no-repeat rounded-2xl flex-col p-6 w-full">
+          <h1 class="text-3xl font-bold text-white flex items-center gap-2">
+            Abuja
+            <img
+              src="./public/asset/Nigeria-flag.png"
+              alt="Nigeria flag"
+              class="w-[21px] h-[21px] object-cover"
+            />
+          </h1>
+          <p class="text-base leading-[24px] py-2 text-white">Average price NGN 15,221.87</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-accra backdrop-blur-0 h-[270.11px] bg-cover bg-center bg-no-repeat rounded-2xl flex-col p-6 w-full">
+          <h1 class="text-3xl font-bold text-white flex items-center gap-2">
+            Accra
+            <img
+              src="./public/asset/Nigeria-flag.png"
+              alt="Nigeria flag"
+              class="w-[21px] h-[21px] object-cover"
+            />
+          </h1>
+          <p class="text-base leading-[24px] py-2 text-white">Average price NGN 15,221.87</p>
+        </div>
+      </div>
+
+
+      <div class="flex flex-col gap-4">
+        <h1 class="text-2xl leading-[32px] font-bold py-2">Browse by property type in Lagos</h1>
+        <div class="flex gap-4 items-center flex-wrap">
+          <!-- card 1 -->
+          <div class="flex flex-col gap-2 w-full max-w-[263px]">
+        <div>
+          <img src="./public/asset/Hotel.jpeg" alt="" class="rounded-xl" >
+        </div>
+        <div class="pt-4">
+        <h1 class="text-base leading-[24px] font-bold">Hotels</h1>
+        <p class="text-sm leading-[20px] text-dark-100">Dec 3-Dec 6, 2 adults</p>
+        <span class="text-sm leading-[20px] text-dark-100">124 available</span>
+      </div>
+    </div>
+          <!-- card 2 -->
+          <div class="flex flex-col gap-2 w-full max-w-[263px]">
+        <div>
+          <img src="./public/asset/apartment.jpeg" alt="" class="rounded-xl" >
+        </div>
+        <div class="pt-4">
+        <h1 class="text-base leading-[24px] font-bold">Apartment</h1>
+        <p class="text-sm leading-[20px] text-dark-100">Dec 3-Dec 6, 2 adults</p>
+        <span class="text-sm leading-[20px] text-dark-100">189 available</span>
+      </div>
+    </div>
+          <!-- card 3 -->
+          <div class="flex flex-col gap-2 w-full max-w-[263px]">
+        <div>
+          <img src="./public/asset/Resort.jpeg" alt="" class="rounded-xl" >
+        </div>
+        <div class="pt-4">
+        <h1 class="text-base leading-[24px] font-bold">Resorts</h1>
+        <p class="text-sm leading-[20px] text-dark-100">Dec 3-Dec 6, 2 adults</p>
+        <span class="text-sm leading-[20px] text-dark-100">1 available</span>
+      </div>
+    </div>
+          <!-- card 4 -->
+          <div class="flex flex-col gap-2 w-full max-w-[263px]">
+        <div>
+          <img src="./public/asset/Villas.jpeg" alt="" class="rounded-xl" >
+        </div>
+        <div class="pt-4">
+        <h1 class="text-base leading-[24px] font-bold">Villas</h1>
+        <p class="text-sm leading-[20px] text-dark-100">Dec 3-Dec 6, 2 adults</p>
+        <span class="text-sm leading-[20px] text-dark-100">3 available</span>
+      </div>
+    </div>
+          <!-- card 5 -->
+          <div class="flex flex-col gap-2 w-full max-w-[263px]">
+        <div>
+          <img src="./public/asset/Vacation.jpeg" alt="" class="rounded-xl" >
+        </div>
+        <div class="pt-4">
+        <h1 class="text-base leading-[24px] font-bold">Vacation H0mes</h1>
+        <p class="text-sm leading-[20px] text-dark-100">Dec 3-Dec 6, 2 adults</p>
+        <span class="text-sm leading-[20px] text-dark-100">5 available</span>
+      </div>
+    </div>
+          <!-- card 6 -->
+          <div class="flex flex-col gap-2 w-full max-w-[263px]">
+        <div>
+          <img src="./public/asset/Guest.jpeg" alt="" class="rounded-xl" >
+        </div>
+        <div class="pt-4">
+        <h1 class="text-base leading-[24px] font-bold">Guest Homes</h1>
+        <p class="text-sm leading-[20px] text-dark-100">Dec 3-Dec 6, 2 adults</p>
+        <span class="text-sm leading-[20px] text-dark-100">14 available</span>
+      </div>
+    </div>
+          <!-- card 7 -->
+          <div class="flex flex-col gap-2 w-full max-w-[263px]">
+        <div>
+          <img src="./public/asset/Hostels.jpeg" alt="" class="rounded-xl" >
+        </div>
+        <div class="pt-4">
+        <h1 class="text-base leading-[24px] font-bold">Hostels</h1>
+        <p class="text-sm leading-[20px] text-dark-100">Dec 3-Dec 6, 2 adults</p>
+        <span class="text-sm leading-[20px] text-dark-100">1 available</span>
+      </div>
+    </div>
+          <!-- card 8 -->
+          <div class="flex flex-col gap-2 w-full max-w-[263px]">
+        <div>
+          <img src="./public/asset/bnbs.jpeg" alt="" class="rounded-xl" >
+        </div>
+        <div class="pt-4">
+        <h1 class="text-base leading-[24px] font-bold">B&BS</h1>
+        <p class="text-sm leading-[20px] text-dark-100">Dec 3-Dec 6, 2 adults</p>
+        <span class="text-sm leading-[20px] text-dark-100">3 available</span>
+      </div>
+    </div>
+          <!-- card 9 -->
+          <div class="flex flex-col gap-2 w-full max-w-[263px]">
+        <div>
+          <img src="./public/asset/Homestays.jpeg" alt="" class="rounded-xl" >
+        </div>
+        <div class="pt-4">
+        <h1 class="text-base leading-[24px] font-bold">Homestays</h1>
+        <p class="text-sm leading-[20px] text-dark-100">Dec 3-Dec 6, 2 adults</p>
+        <span class="text-sm leading-[20px] text-dark-100">8 available</span>
+      </div>
+    </div>
+        
+
+
+      </div>
+      </div>
+    </section>
+
+    <!-- Quick and easy trip planner section -->
+    <section class="wrapper py-10 flex flex-col gap-4">
+ <h1 class="text-2xl leading-[32px] font-bold">Quick and easy trip planner</h1>
+ <p class="text-base leading-[24px] py-2 text-dark-100">Pick a vibe and explore the top destinations in Nigeria</p>
+
+    <div class="flex gap-4 flex-col items-start">
+      <div class="flex gap-4">
+      <div>
+      <button class="border border-gray-400 bg-blue-200 rounded-xl py-2 px-4">city</button>
+    </div>
+       <button class=" py-2 px-4 hover:bg-blue-100 rounded-2xl flex items-center gap-4">
+        <i class="fa-regular fa-heart fa-2xs text-2xl"></i>
+        Romance
+      </button>
+    </div>
+       <div class="flex">
+      <div class="flex flex-col gap-2 w-full max-w-[169.99px] ">
+        <img src="./public/asset/ikeja-1.jpg" alt="" class="object-cover rounded-lg">
+        <div>
+        <h4 class="text-base leading-[22px] font-bold">Ikeja</h4>
+        <p class="text-sm leading-[20px] py-2 text-dark-100">9 km from Lagos</p>
+      </div>
+      </div>
+      <div class="flex-1">
+
+      </div>
+    </div>
+    </div>
+    </section>
+    
+    <!-- Explore Nigeria section -->
+     <section class="wrapper py-6">
+      <h1 class="text-2xl leading-[32px] font-bold"> Explore Nigeria</h1>
+      <p class="text-base leading-[24px] py-2 text-dark-100">These popular destinations have a lot to offer</p>
+
+        <div class="flex gap-4 w-full">
+            <!-- card 1 -->
+            <div class="flex flex-col w-full">
+              <img src="./public/asset/Lagos-1.jpg" alt="" class="object-cover rounded-lg">
+              <div>
+              <h4 class="text-base leading-[22px] font-bold">Lagos</h4>
+              <p class="text-sm leading-[20px] py-2 text-dark-100">572 properties</p>
+            </div>
+            </div>
+            <!-- card 2 -->
+            <div class="flex flex-col w-full ">
+              <img src="./public/asset/Abuja-2.jpg" alt="" class="object-cover rounded-lg">
+              <div>
+              <h4 class="text-base leading-[22px] font-bold">Abuja</h4>
+              <p class="text-sm leading-[20px] py-2 text-dark-100">233 properties</p>
+            </div>
+            </div>
+            <!-- card 3 -->
+            <div class="flex flex-col w-full ">
+              <img src="./public/asset/lekki-2.jpg" alt="" class="object-cover rounded-lg">
+              <div>
+              <h4 class="text-base leading-[22px] font-bold">Lekki</h4>
+              <p class="text-sm leading-[20px] py-2 text-dark-100">70 properties</p>
+            </div>
+            </div>
+            <!-- card 4 -->
+            <div class="flex flex-col w-full">
+              <img src="./public/asset/Ibadan.jpg" alt="" class="object-cover rounded-lg">
+              <div>
+              <h4 class="text-base leading-[22px] font-bold">Ibadan</h4>
+              <p class="text-sm leading-[20px] py-2 text-dark-100">45 properties</p>
+            </div>
+            </div>
+            <!-- card 5 -->
+            <div class="flex flex-col gap-2 w-full max-w-[169.99px] ">
+              <img src="./public/asset/Abeokuta.jpg" alt="" class="object-cover rounded-lg">
+              <div>
+              <h4 class="text-base leading-[22px] font-bold">Abeokuta</h4>
+              <p class="text-sm leading-[20px] py-2 text-dark-100">20 properties</p>
+            </div>
+            </div>
+            <!-- card 6 -->
+            <div class="flex flex-col gap-2 w-full max-w-[169.99px] ">
+              <img src="./public/asset/Benin-city.jpg" alt="" class="object-cover rounded-lg">
+              <div>
+              <h4 class="text-base leading-[22px] font-bold">Benin-City</h4>
+              <p class="text-sm leading-[20px] py-2 text-dark-100">32 properties</p>
+            </div>
+            </div>
+        </div>
+     
+     </section>
+
+     <!-- Black Friday Deals section -->
+      <section class="wrapper py-10">
+        <h1 class="text-2xl leading-[32px] font-bold">Black Friday Deals</h1>
+        <p class="text-base leading-[24px] py-2 text-dark-100">Save on stays for December 6 - December 8</p>
+
+
+        <div class="flex items-center gap-4 flex-wrap">
+         
+            <!-- card 1 -->
+            <div class="w-full max-w-[263px] flex flex-col  shadow-2xl rounded-2xl">
+             <div>
+                <img src="./public/asset/card-1.jpg" alt="" class=" object-cover w-full rounded-t-lg h-[210px]">
+             </div>
+
+             <!-- contents -->
+              <div class="p-2 flex flex-col gap-2">
+               <div>
+                <h4 class="bg-primary inline-block py-1 px-1 text-white">Genius</h4>
+              </div>
+                
+                 <h2>Vertigo Hotel</h2>
+                 <div class="flex gap-2 items-center">
+                  <p class="w-7 h-7 bg-primary rounded-md text-white text-center">7.9</p>
+                  <span class="text-base leading-[24px] py-2 text-dark-100">Good. 75 Reviews</span>
+                 </div>
+                 <div>
+                 <button class="py-1 px-1 rounded-md bg-gray-600 text-white text-xs leading-[18px]">Black Friday Deal</button>
+                </div>
+              
+              <p class="p-2 text-xs space-x-2 flex items-center text-dark-100">
+                2nights
+                <span class="text-red-500 text-sm leading-[20px]  block">NGN 248,268</span>
+                <strong class="text-base leading-[24px] font-bold text-black block">NGN 299,788</strong>
+              </p>
+            </div>
+              
+        </div>
+            <!-- card 1 -->
+            <div class="w-full max-w-[263px] flex flex-col  shadow-2xl rounded-2xl">
+             <div>
+                <img src="./public/asset/card-1.jpg" alt="" class=" object-cover w-full rounded-t-lg h-[210px]">
+             </div>
+
+             <!-- contents -->
+              <div class="p-2 flex flex-col gap-2">
+               <div>
+                <h4 class="bg-primary inline-block py-1 px-1 text-white">Genius</h4>
+              </div>
+                
+                 <h2>Vertigo Hotel</h2>
+                 <div class="flex gap-2 items-center">
+                  <p class="w-7 h-7 bg-primary rounded-md text-white text-center">7.9</p>
+                  <span class="text-base leading-[24px] py-2 text-dark-100">Good. 75 Reviews</span>
+                 </div>
+                 <div>
+                 <button class="py-1 px-1 rounded-md bg-gray-600 text-white text-xs leading-[18px]">Black Friday Deal</button>
+                </div>
+              
+              <p class="p-2 text-xs space-x-2 flex items-center text-dark-100">
+                2nights
+                <span class="text-red-500 text-sm leading-[20px]  block">NGN 248,268</span>
+                <strong class="text-base leading-[24px] font-bold text-black block">NGN 299,788</strong>
+              </p>
+            </div>
+              
+        </div>
+            <!-- card 1 -->
+            <div class="w-full max-w-[263px] flex flex-col  shadow-2xl rounded-2xl">
+             <div>
+                <img src="./public/asset/card-1.jpg" alt="" class=" object-cover w-full rounded-t-lg h-[210px]">
+             </div>
+
+             <!-- contents -->
+              <div class="p-2 flex flex-col gap-2">
+               <div>
+                <h4 class="bg-primary inline-block py-1 px-1 text-white">Genius</h4>
+              </div>
+                
+                 <h2>Vertigo Hotel</h2>
+                 <div class="flex gap-2 items-center">
+                  <p class="w-7 h-7 bg-primary rounded-md text-white text-center">7.9</p>
+                  <span class="text-base leading-[24px] py-2 text-dark-100">Good. 75 Reviews</span>
+                 </div>
+                 <div>
+                 <button class="py-1 px-1 rounded-md bg-gray-600 text-white text-xs leading-[18px]">Black Friday Deal</button>
+                </div>
+              
+              <p class="p-2 text-xs space-x-2 flex items-center text-dark-100">
+                2nights
+                <span class="text-red-500 text-sm leading-[20px]  block">NGN 248,268</span>
+                <strong class="text-base leading-[24px] font-bold text-black block">NGN 299,788</strong>
+              </p>
+            </div>
+              
+        </div>
+            <!-- card 1 -->
+            <div class="w-full max-w-[263px] flex flex-col  shadow-2xl rounded-2xl">
+             <div>
+                <img src="./public/asset/card-1.jpg" alt="" class=" object-cover w-full rounded-t-lg h-[210px]">
+             </div>
+
+             <!-- contents -->
+              <div class="p-2 flex flex-col gap-2">
+               <div>
+                <h4 class="bg-primary inline-block py-1 px-1 text-white">Genius</h4>
+              </div>
+                
+                 <h2>Vertigo Hotel</h2>
+                 <div class="flex gap-2 items-center">
+                  <p class="w-7 h-7 bg-primary rounded-md text-white text-center">7.9</p>
+                  <span class="text-base leading-[24px] py-2 text-dark-100">Good. 75 Reviews</span>
+                 </div>
+                 <div>
+                 <button class="py-1 px-1 rounded-md bg-gray-600 text-white text-xs leading-[18px]">Black Friday Deal</button>
+                </div>
+              
+              <p class="p-2 text-xs space-x-2 flex items-center text-dark-100">
+                2nights
+                <span class="text-red-500 text-sm leading-[20px]  block">NGN 248,268</span>
+                <strong class="text-base leading-[24px] font-bold text-black block">NGN 299,788</strong>
+              </p>
+            </div>
+              
+        </div>
+            <!-- card 1 -->
+            <div class="w-full max-w-[263px] flex flex-col  shadow-2xl rounded-2xl">
+             <div>
+                <img src="./public/asset/card-1.jpg" alt="" class=" object-cover w-full rounded-t-lg h-[210px]">
+             </div>
+
+             <!-- contents -->
+              <div class="p-2 flex flex-col gap-2">
+               <div>
+                <h4 class="bg-primary inline-block py-1 px-1 text-white">Genius</h4>
+              </div>
+                
+                 <h2>Vertigo Hotel</h2>
+                 <div class="flex gap-2 items-center">
+                  <p class="w-7 h-7 bg-primary rounded-md text-white text-center">7.9</p>
+                  <span class="text-base leading-[24px] py-2 text-dark-100">Good. 75 Reviews</span>
+                 </div>
+                 <div>
+                 <button class="py-1 px-1 rounded-md bg-gray-600 text-white text-xs leading-[18px]">Black Friday Deal</button>
+                </div>
+              
+              <p class="p-2 text-xs space-x-2 flex items-center text-dark-100">
+                2nights
+                <span class="text-red-500 text-sm leading-[20px]  block">NGN 248,268</span>
+                <strong class="text-base leading-[24px] font-bold text-black block">NGN 299,788</strong>
+              </p>
+            </div>
+              
+        </div>
+            <!-- card 1 -->
+            <div class="w-full max-w-[263px] flex flex-col  shadow-2xl rounded-2xl">
+             <div>
+                <img src="./public/asset/card-1.jpg" alt="" class=" object-cover w-full rounded-t-lg h-[210px]">
+             </div>
+
+             <!-- contents -->
+              <div class="p-2 flex flex-col gap-2">
+               <div>
+                <h4 class="bg-primary inline-block py-1 px-1 text-white">Genius</h4>
+              </div>
+                
+                 <h2>Vertigo Hotel</h2>
+                 <div class="flex gap-2 items-center">
+                  <p class="w-7 h-7 bg-primary rounded-md text-white text-center">7.9</p>
+                  <span class="text-base leading-[24px] py-2 text-dark-100">Good. 75 Reviews</span>
+                 </div>
+                 <div>
+                 <button class="py-1 px-1 rounded-md bg-gray-600 text-white text-xs leading-[18px]">Black Friday Deal</button>
+                </div>
+              
+              <p class="p-2 text-xs space-x-2 flex items-center text-dark-100">
+                2nights
+                <span class="text-red-500 text-sm leading-[20px]  block">NGN 248,268</span>
+                <strong class="text-base leading-[24px] font-bold text-black block">NGN 299,788</strong>
+              </p>
+            </div>
+              
+        </div>
+            <!-- card 1 -->
+            <div class="w-full max-w-[263px] flex flex-col  shadow-2xl rounded-2xl">
+             <div>
+                <img src="./public/asset/card-1.jpg" alt="" class=" object-cover w-full rounded-t-lg h-[210px]">
+             </div>
+
+             <!-- contents -->
+              <div class="p-2 flex flex-col gap-2">
+               <div>
+                <h4 class="bg-primary inline-block py-1 px-1 text-white">Genius</h4>
+              </div>
+                
+                 <h2>Vertigo Hotel</h2>
+                 <div class="flex gap-2 items-center">
+                  <p class="w-7 h-7 bg-primary rounded-md text-white text-center">7.9</p>
+                  <span class="text-base leading-[24px] py-2 text-dark-100">Good. 75 Reviews</span>
+                 </div>
+                 <div>
+                 <button class="py-1 px-1 rounded-md bg-gray-600 text-white text-xs leading-[18px]">Black Friday Deal</button>
+                </div>
+              
+              <p class="p-2 text-xs space-x-2 flex items-center text-dark-100">
+                2nights
+                <span class="text-red-500 text-sm leading-[20px]  block">NGN 248,268</span>
+                <strong class="text-base leading-[24px] font-bold text-black block">NGN 299,788</strong>
+              </p>
+            </div>
+              
+        </div>
+            <!-- card 1 -->
+            <div class="w-full max-w-[263px] flex flex-col  shadow-2xl rounded-2xl">
+             <div>
+                <img src="./public/asset/card-1.jpg" alt="" class=" object-cover w-full rounded-t-lg h-[210px]">
+             </div>
+
+             <!-- contents -->
+              <div class="p-2 flex flex-col gap-2">
+               <div>
+                <h4 class="bg-primary inline-block py-1 px-1 text-white">Genius</h4>
+              </div>
+                
+                 <h2>Vertigo Hotel</h2>
+                 <div class="flex gap-2 items-center">
+                  <p class="w-7 h-7 bg-primary rounded-md text-white text-center">7.9</p>
+                  <span class="text-base leading-[24px] py-2 text-dark-100">Good. 75 Reviews</span>
+                 </div>
+                 <div>
+                 <button class="py-1 px-1 rounded-md bg-gray-600 text-white text-xs leading-[18px]">Black Friday Deal</button>
+                </div>
+              
+              <p class="p-2 text-xs space-x-2 flex items-center text-dark-100">
+                2nights
+                <span class="text-red-500 text-sm leading-[20px]  block">NGN 248,268</span>
+                <strong class="text-base leading-[24px] font-bold text-black block">NGN 299,788</strong>
+              </p>
+            </div>
+              
+        </div>
+            <!-- card 1 -->
+            <div class="w-full max-w-[263px] flex flex-col  shadow-2xl rounded-2xl">
+             <div>
+                <img src="./public/asset/card-1.jpg" alt="" class=" object-cover w-full rounded-t-lg h-[210px]">
+             </div>
+
+             <!-- contents -->
+              <div class="p-2 flex flex-col gap-2">
+               <div>
+                <h4 class="bg-primary inline-block py-1 px-1 text-white">Genius</h4>
+              </div>
+                
+                 <h2>Vertigo Hotel</h2>
+                 <div class="flex gap-2 items-center">
+                  <p class="w-7 h-7 bg-primary rounded-md text-white text-center">7.9</p>
+                  <span class="text-base leading-[24px] py-2 text-dark-100">Good. 75 Reviews</span>
+                 </div>
+                 <div>
+                 <button class="py-1 px-1 rounded-md bg-gray-600 text-white text-xs leading-[18px]">Black Friday Deal</button>
+                </div>
+              
+              <p class="p-2 text-xs space-x-2 flex items-center text-dark-100">
+                2nights
+                <span class="text-red-500 text-sm leading-[20px]  block">NGN 248,268</span>
+                <strong class="text-base leading-[24px] font-bold text-black block">NGN 299,788</strong>
+              </p>
+            </div>
+              
+        </div>
+            <!-- card 1 -->
+            <div class="w-full max-w-[263px] flex flex-col  shadow-2xl rounded-2xl">
+             <div>
+                <img src="./public/asset/card-1.jpg" alt="" class=" object-cover w-full rounded-t-lg h-[210px]">
+             </div>
+
+             <!-- contents -->
+              <div class="p-2 flex flex-col gap-2">
+               <div>
+                <h4 class="bg-primary inline-block py-1 px-1 text-white">Genius</h4>
+              </div>
+                
+                 <h2>Vertigo Hotel</h2>
+                 <div class="flex gap-2 items-center">
+                  <p class="w-7 h-7 bg-primary rounded-md text-white text-center">7.9</p>
+                  <span class="text-base leading-[24px] py-2 text-dark-100">Good. 75 Reviews</span>
+                 </div>
+                 <div>
+                 <button class="py-1 px-1 rounded-md bg-gray-600 text-white text-xs leading-[18px]">Black Friday Deal</button>
+                </div>
+              
+              <p class="p-2 text-xs space-x-2 flex items-center text-dark-100">
+                2nights
+                <span class="text-red-500 text-sm leading-[20px]  block">NGN 248,268</span>
+                <strong class="text-base leading-[24px] font-bold text-black block">NGN 299,788</strong>
+              </p>
+            </div>
+              
+        </div>
+      </div>
+  
+      </section>
     
   </main>
 </body>
