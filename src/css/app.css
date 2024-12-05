@@ -10,5 +10,5 @@
 }
 
 .btn {
-  @apply py-[4px] px-[12px] rounded-sm
+  @apply py-[4px] px-[12px] rounded-md bg-primary
 }

@@ -27,6 +27,7 @@ module.exports = {
         lekki: "url('/src/public/asset/Lekki.jpg')", 
         abuja: "url('/src/public/asset/Abuja.jpg')", 
         accra: "url('/src/public/asset/accra.jpg')", 
+        trip: "url('/src/public/asset/next=trip.JPG')", 
       },
     },
   },
