@@ -9,149 +9,164 @@
 </head>
 <body>
   <header class="bg-primary">
-      <nav class="wrapper flex justify-between items-center py-4 text-white">
-        <div>
-          <a href="/">
-            <strong>BOOKING.COM</strong>
-          </a>
-        </div>
+    <nav class="wrapper flex justify-between items-center py-4 text-white md:px-0 p-4">
+      <div>
+        <a href="/">
+          <strong>BOOKING.COM</strong>
+        </a>
+      </div>
 
-        <div class="flex items-center space-x-8">
-          <menu class="flex items-center space-x-6">
-            <li role="button" class="cursor-pointer hover:bg-blue-800 py-2 px-4">NGN</li>
-            <li role="button" class="cursor-pointer hover:bg-blue-800 py-2 px-4">
-              <img src="./public/asset/usa.png" alt="USA Flag" class="rounded-full w-[24px] h-[24px]">
-            </li>
-            <li role="button" class="cursor-pointer hover:bg-blue-800 py-2 px-4">
-              <i class="fa fa-question-circle text-2xl"></i>
-            </li>
-            <li role="button" class="cursor-pointer hover:bg-blue-800 py-2 px-4">List your properties</li>
-          </menu>
-          <div class="flex space-x-2">
-            <button class="btn bg-white text-primary py-2 px-4 rounded">Register</button>
-            <button class="btn bg-white text-primary py-2 px-4 rounded">Sign in</button>
-          </div>
-        </div>
-      </nav>
-      <nav class="wrapper py-12 flex space-x-4 text-white ">
-        <menu class="flex items-center space-x-10">
-          <li>
-            <a href="/">
-              <button class="border border-white text-white py-2 px-4 rounded-full hover:border-gray-800">
-                <i class="fa-thin fa-chair"></i>
-                Stay</button>
-            </a>
+      <div class="hidden md:flex items-center space-x-8">
+        <menu class="flex items-center space-x-6">
+          <li role="button" class="cursor-pointer hover:bg-blue-800 py-2 px-4">NGN</li>
+          <li role="button" class="cursor-pointer hover:bg-blue-800 py-2 px-4">
+            <img src="./public/asset/usa.png" alt="USA Flag" class="rounded-full w-[24px] h-[24px]">
           </li>
-
-          <li>
-              <a href="/">
-                Flights
-              </a>
+          <li role="button" class="cursor-pointer hover:bg-blue-800 py-2 px-4">
+            <i class="fa fa-question-circle text-2xl"></i>
           </li>
-          <li>
-            <a href="/">
-              Car Rentals
-            </a>
-        </li>
-
+          <li role="button" class="cursor-pointer hover:bg-blue-800 py-2 px-4">List your properties</li>
+        </menu>
+        <div class="flex space-x-2">
+          <button class="btn !bg-white text-primary py-2 px-4 rounded">Register</button>
+          <button class="btn !bg-white text-primary py-2 px-4 rounded">Sign in</button>
+        </div>
+      </div>
+     
+      <div class="md:hidden flex space-x-6 ">
+        <img src="./public/asset/user.svg" alt="" class="size-6">
+        <i class="fa-solid fa-bars text-2xl"></i>
+        
+      </div>
+    </nav>
+    
+    <nav class="wrapper flex pb-12 space-x-4 text-white md:px-0 p-4 ">
+      <menu class="flex items-center space-x-5">
         <li>
           <a href="/">
-           Experiences
+            <button class="border border-white text-white py-2 px-4 rounded-full hover:border-gray-800 flex gap-2 text-sm leading-[20px]">
+              <img src="./public/asset/chair-icon.svg" alt="chair-icon" class="size-5">
+              Stay</button>
           </a>
-      </li>
+        </li>
 
-      <li>
-        <a href="/">
-          Airport Taxis
-        </a>
-    </li>
-      
+        <li >
+          <button class="flex gap-2 hover:bg-blue-400 rounded-xl px-2 py-2 text-sm leading-[20px]">
+            <img src="./public/asset/flight.svg" alt="flight-icon" class="size-5">
+            Flights
+          </button>
+
+        </li>
+        <li class="hidden md:block">
+          <button class="flex gap-2 hover:bg-blue-400 rounded-xl px-2 py-2 text-sm leading-[20px]">
+            <img src="./public/asset/hotel.svg" alt="flighthotel" class="size-5">
+            Flights + Hotel
+          </button>
+        </li>
         
-          
-        
-        </menu>
-      </nav>
-  </header>
+
+        </li>
+        <li >
+          <button class="flex gap-2 hover:bg-blue-400 rounded-xl px-2 py-2 text-sm leading-[20px]">
+            <img src="./public/asset/car.svg" alt="flighthotel" class="size-5">
+            Car Rentals
+          </button>
+
+        </li>
+        <li>
+          <button class="flex gap-2 hover:bg-blue-400 rounded-xl px-2 py-2 text-sm leading-[20px]">
+            <img src="./public/asset/experiencr.svg" alt="flighthotel" class="size-5">
+            <span class="hidden md:block">Experiences</span>
+          </button>
+
+        </li>
+        <li class="hidden md:block">
+          <button class="flex gap-2 hover:bg-blue-400 rounded-xl px-2 py-2 text-sm leading-[20px]">
+            <img src="./public/asset/airport.svg" alt="flighthotel" class="size-5">
+            Airport Taxis
+          </button>
+
+        </li>
+      </menu>
+    </nav>
+    
+</header>
   <main>
     <!-- Input section -->
-    <section>
-      <div class="py-5 px-2 wrapper">
-        <div
-          class="flex flex-col lg:flex-row items-start gap-1 bg-yellow-500 mt-[24px] mb-[16px] p-[4px] rounded-lg absolute left-1/2 transform -translate-x-1/2 -translate-y-[70px] z-30 w-full max-w-[1100px]"
-        
-        >
-          <!-- Destination Input -->
-          <div class="relative flex items-center flex-1">
-            <i class="fa fa-bed text-gray-500 absolute left-3"></i>
-            <input
-              type="text"
-              placeholder="Lagos"
-              class="w-full pl-10 pr-4 py-3 focus:outline-none border border-gray-300 rounded-sm"
-            />
-            <i class="fa fa-times text-gray-500 cursor-pointer absolute right-3"></i>
-          </div>
-      
-          <!-- Date Input -->
-          <div class="relative flex items-center flex-1 border-t lg:border-t-0 lg:border-l border-gray-300 lg:pl-2">
-            <i class="fa fa-calendar text-gray-500 absolute left-3"></i>
-            <input
-              type="text"
-              placeholder="Tue, Dec 3 — Fri, Dec 6"
-              class="w-full pl-10 pr-4 py-3 focus:outline-none border border-gray-300 rounded-sm"
-            />
-          </div>
-      
-          <!-- Guests Input -->
-          <div class="relative flex items-center flex-1 border-t lg:border-t-0 lg:border-l border-gray-300 lg:pl-2">
-            <i class="fa fa-user text-gray-500 absolute left-3"></i>
-            <input
-              type="text"
-              placeholder="2 adults · 0 children · 1 room"
-              class="w-full pl-10 pr-4 py-3 focus:outline-none border border-gray-300 rounded-sm"
-            />
-          </div>
-      
-          <!-- Search Button -->
-          <div class="lg:ml-2 flex justify-center mt-2 lg:mt-0">
-            <button class="bg-blue-600 text-white font-medium py-3 px-8 rounded-sm hover:bg-blue-700">
-              Search
-            </button>
-          </div>
-        </div>
-      
-        
-        <div class="mt-5 flex items-center gap-4">
-          <div>
-            <a href="/" class="flex items-center gap-3 text-xs text-blue-400">Home
-              <i class='fas fa-greater-than'></i>
-            </a>
-          </div>
-
-          <div>
-            <a href="/" class="flex items-center gap-3 text-xs text-blue-400">Nigeria
-              <i class='fas fa-greater-than'></i>
-            </a>
-          </div>
-
-          <div>
-            <a href="/" class="flex items-center gap-3 text-xs text-blue-400">Lagos
-              <i class='fas fa-greater-than'></i>
-            </a>
-          </div>
-          <p class="text-xs text-dark-100">Search results</p>
-         
-        </div>
+  <section class="md:px-0 px-4">
+  <div class="py-5 px-2 wrapper">
+    <!-- Inputs Section -->
+    <div
+      class="flex flex-col lg:flex-row items-start  bg-yellow-500 mt-[24px] mb-[16px] p-[4px] rounded-lg absolute left-1/2 transform -translate-x-1/2 -translate-y-[70px] z-30 w-full max-w-[1100px]"
+    >
+      <!-- First Input (Visible on all screens) -->
+      <div class="relative flex items-center flex-1 z-50 w-full">
   
-  
-  
-  
+        <img src="./public/asset/chair.svg" alt="" class="size-6 absolute left-3">
+        <input
+          type="text"
+          placeholder="Lagos"
+          class="w-full pl-10 pr-4 py-3 focus:outline-none border border-gray-300 rounded-sm placeholder-black"
+        />
+        <i class="fa fa-times text-gray-500 cursor-pointer absolute right-4"></i>
       </div>
-    </section>
 
-    <section class="wrapper flex items-start gap-4">
+      <!-- Remaining Inputs (Hidden on mobile, visible md and upward) -->
+      <div class="hidden md:flex relative items-center flex-1 border-t lg:border-t-0 lg:border-l border-gray-300 lg:pl-2">
+        <img src="./public/asset/calender.svg" alt="" class="size-6 absolute left-4">
+        <input
+          type="text"
+          placeholder="Tue, Dec 3 — Fri, Dec 6"
+          class="w-full pl-10 pr-4 py-3 focus:outline-none border border-gray-300 rounded-sm placeholder-black"
+        />
+      </div>
+
+      <div class="hidden md:flex relative items-center flex-1 border-t lg:border-t-0 lg:border-l border-gray-300 lg:pl-2">
+        <img src="./public/asset/user1.svg" alt="" class="size-6 absolute left-4">
+        <input
+          type="text"
+          placeholder="2 adults · 0 children · 1 room"
+          class="w-full pl-10 pr-4 py-3 focus:outline-none border border-gray-300 rounded-sm placeholder-black"
+        />
+      </div>
+
+      <!-- Search Button -->
+      <div class="hidden md:flex lg:ml-2 justify-center mt-2 lg:mt-0">
+        <button class="bg-blue-600 text-white font-medium py-3 px-8 rounded-sm hover:bg-blue-700">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <!-- Breadcrumb Section -->
+    <div class="mt-5 flex items-center gap-4">
+      <div>
+        <a href="/" class="flex items-center gap-3 text-xs text-blue-400">Home
+          <i class='fas fa-greater-than'></i>
+        </a>
+      </div>
+
+      <div>
+        <a href="/" class="flex items-center gap-3 text-xs text-blue-400">Nigeria
+          <i class='fas fa-greater-than'></i>
+        </a>
+      </div>
+
+      <div>
+        <a href="/" class="flex items-center gap-3 text-xs text-blue-400">Lagos
+          <i class='fas fa-greater-than'></i>
+        </a>
+      </div>
+      <p class="text-xs text-dark-100">Search results</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- map section -->
+ <section class="wrapper flex items-start gap-4 lg:px-0 p-4">
 
        <!-- Left Side -->
-       <div class="w-full max-w-[262.66px]">
+       <div class="w-full max-w-[262.66px] hidden lg:block">
         <img src="./public/asset/map.JPG" alt="">
           
        
@@ -2092,7 +2107,7 @@
 
        <!-- Right Side -->
        <div class="flex-1 flex flex-col gap-4">
-        <div class=" flex items-start justify-between">
+        <div class="hidden md:flex items-start justify-between">
         <div class="flex flex-col">
           <h1 class="text-xl leading-[28px] font-bold">Lagos: 630 properties found</h1>
           <div class="py-4">
@@ -2127,10 +2142,10 @@
           </div>
       
           <!-- Content Section -->
-          <div class="flex flex-1 justify-between">
+          <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
             <!-- Details -->
             <div class="flex-1">
-              <h1 class="text-xl leading-[28px] font-bold mb-1">
+              <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
                 PRESKEN WHITE HOUSE
                 <span class="ml-1 text-yellow-400 text-sm">★★★</span>
               </h1>
@@ -2140,17 +2155,17 @@
                 <span class="text-gray-500"> · 13.2 km from downtown</span>
               </p>
               
-              <p class="text-xs leading-[18px] text-gray-500">
+              <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
                Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
               </p>
             </div>
       
             <!-- Ratings and Price -->
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 items-start">
               <!-- Rating Info -->
-               <div class="flex gap-4">
-              <div class="flex flex-col">
-                <h1 class="text-sm font-bold">Very Good</h1>
+               <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+              <div class="flex flex-row md:flex-col gap-1">
+                <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
                 <p class="text-xs text-gray-500">200 reviews</p>
               </div>
               <!-- Rating Badge -->
@@ -2159,7 +2174,7 @@
               </div>
             </div>
 
-              <div>
+              <div class="hidden md:block">
                 <button class="btn !bg-blue-600 text-white">Show prices</button>
               </div>
             </div>
@@ -2167,66 +2182,1151 @@
         </div>
       </section>
          <!-- card 2 -->
-      <section class="border rounded-lg">
-        <div class="flex gap-4 p-4">
-          <!-- Image Section -->
-          <div class="relative w-full max-w-[240px]">
-            <img
-              src="./public/asset/polandd.jpeg"
-              alt="polandd"
-              class="rounded-md w-full h-auto"
-            />
-            <!-- Heart Icon -->
-            <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
               <img
-                src="./public/asset/Heart.png"
-                alt="Heart-icon"
-                class="w-[30px] h-[30px] p-1"
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
               />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
             </div>
           </div>
-      
-          <!-- Content Section -->
-          <div class="flex flex-1 justify-between">
-            <!-- Details -->
-            <div class="flex-1">
-              <h1 class="text-xl leading-[28px] font-bold mb-1">
-                PRESKEN WHITE HOUSE
-                <span class="ml-1 text-yellow-400 text-sm">★★★</span>
-              </h1>
-              <p class="text-sm text-blue-500 mb-1">
-                <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
-                <a href="#" class="underline font-semibold">Show on map</a>
-                <span class="text-gray-500"> · 13.2 km from downtown</span>
-              </p>
-              <p class="text-xs leading-[18px] text-gray-500 mb-1">Beach Nearby</p>
-              <p class="text-xs leading-[18px] text-gray-500 mb-1">200 m from beach</p>
-              <p class="text-xs leading-[18px] text-gray-500">
-                Located in Lagos, an 8-minute walk from Landmark Beach, Presken Waters provides accommodations with an outdoor swimming pool, free private parking, a garden, and a terrace.
-              </p>
-            </div>
-      
-            <!-- Ratings and Price -->
-            <div class="flex flex-col gap-4">
-              <!-- Rating Info -->
-               <div class="flex gap-4">
-              <div class="flex flex-col">
-                <h1 class="text-sm font-bold">Very Good</h1>
-                <p class="text-xs text-gray-500">200 reviews</p>
-              </div>
-              <!-- Rating Badge -->
-              <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
-                8.8
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
               </div>
             </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- card 2 -->
+         <section class="border rounded-lg">
+          <div class="flex gap-4 p-4">
+            <!-- Image Section -->
+            <div class="relative w-full max-w-[240px]">
+              <img
+                src="./public/asset/polandd.jpeg"
+                alt="polandd"
+                class="rounded-md w-full h-auto"
+              />
+              <!-- Heart Icon -->
+              <div class="absolute top-2 right-2 bg-white rounded-full shadow-md">
+                <img
+                  src="./public/asset/Heart.png"
+                  alt="Heart-icon"
+                  class="w-[30px] h-[30px] p-1"
+                />
+              </div>
+            </div>
+        
+            <!-- Content Section -->
+            <div class="flex flex-col md:flex-row md:flex-1 md:justify-between">
+              <!-- Details -->
+              <div class="flex-1">
+                <h1 class="text-sm md:text-xl leading-[20px] md:leading-[28px] font-bold mb-1">
+                  PRESKEN WHITE HOUSE
+                  <span class="ml-1 text-yellow-400 text-sm">★★★</span>
+                </h1>
+                <p class="text-sm text-blue-500 mb-1">
+                  <a href="#" class="underline font-semibold">Lekki Phase 1, Lagos</a> ·
+                  <a href="#" class="underline font-semibold">Show on map</a>
+                  <span class="text-gray-500"> · 13.2 km from downtown</span>
+                </p>
+                
+                <p class="text-xs leading-[18px] text-gray-500 hidden md:block">
+                 Located in Lagos, 2.3 miles from Nike Art Gallery, PRESKEN WHITE HOUSE provides accommodations with an outdoor swimming pool, free private parking, a shared lounge and a restaurant.
+                </p>
+              </div>
+        
+              <!-- Ratings and Price -->
+              <div class="flex flex-col gap-4 items-start">
+                <!-- Rating Info -->
+                 <div class="flex flex-row-reverse md:flex md:gap-4 gap-2 items-center">
+                <div class="flex flex-row md:flex-col gap-1">
+                  <h1 class="text-xs md:text-sm md:font-bold">Very Good</h1>
+                  <p class="text-xs text-gray-500">200 reviews</p>
+                </div>
+                <!-- Rating Badge -->
+                <div class="w-8 h-8 bg-primary text-white rounded-md flex items-center justify-center text-sm font-bold">
+                  8.8
+                </div>
+              </div>
+  
+                <div class="hidden md:block">
+                  <button class="btn !bg-blue-600 text-white">Show prices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-              <div>
-                <button class="btn !bg-blue-600 text-white">Show prices</button>
-              </div>
-            </div>
-          </div>
+
+        <div class="flex items-center justify-center">
+           <button class="py-2 px-4 border border-blue-700 rounded-md text-blue-600 hover:bg-blue-100">Load More Results</button>
         </div>
-      </section>
+      
       
       
         
@@ -2234,7 +3334,222 @@
        </div>
        
     </section>
+
+    <!-- List your property -->
+    <section class="bg-primary py-5 flex flex-col justify-center items-center px-4 lg:px-0">
+      <div>
+        <button class="border border-white py-2 px-4 text-white rounded-md hover:bg-white hover:text-primary transition">
+          List your property
+        </button>
+      </div>
+    
+      <!-- Divider -->
+      <div class="bg-white w-full h-[1px] mt-4"></div>
+    
+      <!-- Menu Wrapper -->
+      <div class="wrapper pt-4">
+        <menu class="flex flex-wrap justify-center lg:justify-start gap-2">
+          <a href="#" class="block">
+            <li class="underline font-bold cursor-pointer text-[13px] text-white hover:bg-blue-800 px-4 py-2 rounded-md">
+              Mobile version
+            </li>
+          </a>
+          <a href="#" class="block">
+            <li class="underline font-bold cursor-pointer text-[13px] text-white hover:bg-blue-800 px-4 py-2 rounded-md">
+              Your account
+            </li>
+          </a>
+          <a href="#" class="block">
+            <li class="underline font-bold cursor-pointer text-[13px] text-white hover:bg-blue-800 px-4 py-2 rounded-md">
+              Make changes online to your booking
+            </li>
+          </a>
+          <a href="#" class="block">
+            <li class="underline font-bold cursor-pointer text-[13px] text-white hover:bg-blue-800 px-4 py-2 rounded-md">
+              Customer Service Help
+            </li>
+          </a>
+          <a href="#" class="block">
+            <li class="underline font-bold cursor-pointer text-[13px] text-white hover:bg-blue-800 px-4 py-2 rounded-md">
+              Become an affiliate
+            </li>
+          </a>
+          <a href="#" class="block">
+            <li class="underline font-bold cursor-pointer text-[13px] text-white hover:bg-blue-800 px-4 py-2 rounded-md">
+              Booking.com for Business
+            </li>
+          </a>
+        </menu>
+
+        <div class="text-white text-center block md:hidden">
+          <p>Copyright © 1996–2024 Booking.com™. All rights reserved.</p>
+          <p>Your reference ID is: <span class="text-base font-bold">KHENNYCOOL</span> </p>
+          <span>Sitemap</span>
+        </div>
+      </div>
+    </section>
+    
+
+     <!-- footer section -->
+
+     <footer class="wrapper py-5 hidden md:block md:px-0 px-4">
+      <menu class="text-blue-600 flex items-start justify-between">
+        <div>
+        <a href="" class="hover:text-red-500">
+          <li>Countries</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Regions</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Cities</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Districts</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Airports</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Hotels</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li >Places of interest</li>
+        </a>
+      </div>
+
+      <div>
+        <a href="" class="hover:text-red-500">
+          <li>Countries</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Regions</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Cities</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Districts</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Airports</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Hotels</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li >Places of interest</li>
+        </a>
+      </div>
+      <div>
+        <a href="" class="hover:text-red-500">
+          <li>Countries</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Regions</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Cities</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Districts</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Airports</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Hotels</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li >Places of interest</li>
+        </a>
+      </div>
+      <div>
+        <a href="" class="hover:text-red-500">
+          <li>Countries</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Regions</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Cities</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Districts</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Airports</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Hotels</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li >Places of interest</li>
+        </a>
+      </div>
+      <div>
+        <a href="" class="hover:text-red-500">
+          <li>Countries</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Regions</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Cities</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Districts</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Airports</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Hotels</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li >Places of interest</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Countries</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Regions</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Cities</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Districts</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Airports</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li>Hotels</li>
+        </a>
+        <a href="" class="hover:text-red-500">
+          <li >Places of interest</li>
+        </a>
+      </div>
+      </menu>
+
+      <h4 class="text-blue-500 text-center hover:text-red-500">Extranet Log-in</h4>
+
+      <p class="text-black pt-4 md:text-center">Copyright © 1996–2024 Booking.com™. All rights reserved.
+      </p>
+
+      <p class="text-xs text-dark-100 text-center pt-10">Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p>
+
+      <div class="flex items-center justify-center gap-10 pt-6">
+        <img src="./public/asset/booking.png" alt="booking">
+        <img src="./public/asset/priceline.png" alt="priceline">
+        <img src="./public/asset/kayak.png" alt="kayak">
+        <img src="./public/asset/agada.png" alt="agada.png">
+        <img src="./public/asset/open-table.png" alt="open-table">
+      </div>
+     </footer>
+
+     
   </main>
-  
 </body>
 </html>
