@@ -6,7 +6,7 @@
 
 
 .wrapper {
-  @apply container mx-auto max-w-[1124px];
+  @apply container mx-auto max-w-[1100px];
 }
 
 .btn {
