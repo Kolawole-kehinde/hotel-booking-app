@@ -11,6 +11,7 @@ module.exports = {
         primary: {
           DEFAULT: "#003B95",
           light: "#f0f6ff",
+          lighter: "#c2d4ff"
         
         },
         secondary: {
@@ -30,6 +31,9 @@ module.exports = {
         abuja: "url('/src/public/asset/Abuja.jpg')", 
         accra: "url('/src/public/asset/accra.jpg')", 
         trip: "url('/src/public/asset/next=trip.JPG')", 
+        key: "url('/src/public/asset/key-info.jpeg')", 
+        vacation: "url('/src/public/asset/vacation_rental.png')", 
+        rental: "url('/src/public/asset/vacation_amenities.jpeg')", 
       },
     },
   },
